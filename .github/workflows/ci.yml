@@ -1,0 +1,33 @@
+name: CI Pipeline
+
+on:
+  pull_request:
+    branches: [main]  # Só roda quando tiver PR pra main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout código
+      uses: actions/checkout@v2
+
+    - name: Instala Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Instala dependências
+      run: npm install
+
+    - name: Rodar ESLint
+      run: npm run lint
+
+    - name: Rodar Prettier
+      run: npm run prettier
+
+    - name: Rodar Testes (Jest)
+      run: CI=true npm run test
+
+    - name: Build
+      run: npm run build

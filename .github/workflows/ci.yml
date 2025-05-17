@@ -2,7 +2,7 @@ name: CI Pipeline
 
 on:
   push:
-    branches: [main]         # Roda quando fizer push na main
+    branches: [main]         # Roda quando fizer push na main 2
   pull_request:
     branches: [main]         # Roda quando abrir PR pra main
 

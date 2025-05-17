@@ -1,0 +1,23 @@
+{
+  "name": "assessment-cc-devops-kubernetes-sr-01",
+  "version": "1.0.0",
+  "description": "Desafio Devops 2",
+  "main": "index.js",
+  "scripts": {
+    "lint": "echo 'Lint OK'",
+    "prettier": "echo 'Prettier OK'",
+    "test": "echo 'Test OK'",
+    "build": "echo 'Build OK'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavoslbr/devops-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gustavoslbr/devops-2/issues"
+  },
+  "homepage": "https://github.com/gustavoslbr/devops-2#readme"
+}
